@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify - Plant Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <h1>Plantify</h1> -->
+                 <img src="Asset/Logo 1.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Plant Care</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bring Nature to Your Home</h1>
+                <p>Discover the perfect plants to create a beautiful and healthy environment.</p>
+                <button class="btn primary-btn">Shop Now</button>
+                <button class="btn secondary-btn">Learn More</button>
+            </div>
+            <div class="hero-image">
+                <img src="Asset/Group 13.png" alt="Beautiful Plants">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <i class="fas fa-leaf"></i>
+                <h3>Fresh Plants</h3>
+                <p>Sourced directly from trusted growers</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-headset"></i>
+                <h3>Plant Care Support</h3>
+                <p>Expert advice whenever you need</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bestsellers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Bestsellers</h2>
+                <p>Discover our most popular plant varieties</p>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded from product.js -->
+            </div>
+            <button class="btn view-all-btn">View All Products</button>
+        </div>
+    </section>
+    <!-- Search Component -->
+<div class="search-container">
+    <div class="search-wrapper">
+      <button class="filter-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="4" y1="7" x2="20" y2="7" stroke="#004840" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4" y1="12" x2="20" y2="12" stroke="#004840" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4" y1="17" x2="20" y2="17" stroke="#004840" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="8" cy="7" r="2" fill="#004840"/>
+          <circle cx="16" cy="12" r="2" fill="#004840"/>
+          <circle cx="8" cy="17" r="2" fill="#004840"/>
+        </svg>
+      </button>
+      
+      <div class="search-input-wrapper">
+        <input type="text" placeholder="Search flowers..." class="search-input">
+      </div>
+      
+      <button class="search-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+    <!-- Shop by Category -->
+
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Find the perfect plants for every space</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="Asset/image 16.png" alt="Indoor Plants">
+                    <h3>Indoor Plants</h3>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="Asset/image 14.png" alt="Outdoor Plants">
+                    <h3>Outdoor Plants</h3>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="Asset/image 17.png" alt="Succulents">
+                    <h3>Succulents</h3>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="Asset/image 14 (1).png" alt="Plant Accessories">
+                    <h3>Accessories</h3>
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Plant Stands Section -->
+<section class="plant-stands">
+    <div class="container">
+        <div class="stands-header">
+            <h2>Plant stands</h2>
+            <a href="#" class="more-link">more <span class="arrow">→</span></a>
+        </div>
+        
+        <div class="stands-grid">
+            <a href="#" class="stand-item">
+                <img src="Asset/image 5.png" alt="White Pot Macrame Hanger">
+            </a>
+            
+            <a href="#" class="stand-item">
+                <img src="Asset/image 6.png" alt="Terracotta Pot Macrame Hanger">
+            </a>
+            
+            <a href="#" class="stand-item">
+                <img src="Asset/image 7.png" alt="S-Shaped Hanger Hooks">
+            </a>
+            
+        </div>
+    </div>
+</section>
+<!-- Free Shipping Services -->
+<section class="shipping-services">
+    <div class="container">
+        <div class="shipping-content">
+            <div class="shipping-text">
+                <h1>Free Shipping Services</h1>
+                <p class="shipping-note">*only for the same region</p>
+                
+                <div class="shipping-contact">
+                    <div class="contact-item">
+                        <i class="phone-icon"></i>
+                        <span>+62 1189-2719-00</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="email-icon"></i>
+                        <span>order@platify.co</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shipping-image">
+                <img src="Asset/image 13.png" alt="Flowers in vases">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Visit Us Map Section -->
+<section class="map-section">
+    <div class="map-container">
+        <div class="visit-info">
+            <h2>Visit us</h2>
+            <p class="address">
+                Gekikara Street 16, Atalanta<br>
+                1327 Block M<br>
+                Mardial, Sigure<br>
+                T2G 0T2
+            </p>
+            <p class="opening-hours"><span>Open day</span> : 11am-5:30pm everyday</p>
+        </div>
+        
+        <a href="https://maps.app.goo.gl/5rqnj96k5SN3J7QL8" target="_blank" class="directions-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L15 12L9 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            GET DIRECTIONS
+        </a>
+    </div>
+</section>
+
+<!-- What Our Customers Say -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real experiences from plant lovers</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The plants arrived in perfect condition and have been thriving in my apartment. The care instructions were so helpful!"</p>
+                    <div class="customer">
+                        <img src="Asset/images_Man.jpg" alt="Customer">
+                        <div>
+                            <h4>Emma Johnson</h4>
+                            <span>Plant Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Anthurium Flower I ordered from Plantify arrived in immaculate condition! The packaging was so thoughtful - not a single leaf was damaged."</p>
+                    <div class="customer">
+                        <img src="asset/Images_Man-2.jpg" alt="Customer">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>First-time Plant Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I was skeptical about ordering plants online, but my Monstera Deliciosa from Plantify exceeded all expectations.</p>
+                    <div class="customer">
+                        <img src="asset/Images_Man-3.jpg" alt="Customer">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>First-time Plant Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>""My Cactus collection from Plantify has transformed my home office! All five varieties arrived safely packaged and in perfect health. "</p>
+                    <div class="customer">
+                        <img src="Asset/Business_Man2.png"Customer">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>First-time Plant Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>""Just received my House Plant yesterday and I'm already impressed! The plant was carefully wrapped and arrived looking fresh and vibrant despite the shipping process. "</p>
+                    <div class="customer">
+                        <img src="asset/Business_Man3.jpg" alt="Customer">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>First-time Plant Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join Our Green Community</h2>
+                <p>Subscribe to our newsletter for plant care tips, exclusive offers, and new arrivals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Plantify</h3>
+                    <p>Bringing the beauty of nature to your doorstep since 2020.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Plant Care</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Green Street, Plantsville</p>
+                    <p><i class="fas fa-phone-alt"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> hello@plantify.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Plantify. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>
